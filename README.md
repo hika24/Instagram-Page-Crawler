@@ -3,10 +3,11 @@ Instagram crawler base on javascript
 
 how to use:
 - inject script to instagram page. simply just copy IG_Page_Crawler.js to the console in inspect element
+  ![alt text][inject_code]
 - start crawl 
 
 
 
 
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[inject_code]: https://github.com/hika24/Instagram-Page-Crawler/blob/master/Assets/inject_code.PNG "Inject code to browser"
