@@ -1,5 +1,6 @@
-data = []
 
+data = [];
+delay_open_post = 5000;
 function query_row(i_row, flag_top_post = false)
 {
 	//console.log("query_row " + i_row);
@@ -16,7 +17,7 @@ function query_col(i_row, i_col, flag_top_post = false)
 	{
 		document.getElementsByTagName("article")[0].childNodes[index_article].childNodes[(flag_top_post)?1:0].childNodes[i_row].childNodes[i_col].click();
 		href = document.getElementsByTagName("article")[0].childNodes[index_article].childNodes[(flag_top_post)?1:0].childNodes[i_row].childNodes[i_col].getAttribute("href");
-		setTimeout(function(){query_cur_data(i_row, i_col, href, flag_top_post)} , 1000);
+		setTimeout(function(){query_cur_data(i_row, i_col, href, flag_top_post)} , delay_open_post);
 	}else
 	{
 		if(flag_top_post)
